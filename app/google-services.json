@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950258299946",
+    "project_id": "travel-memories-e77db",
+    "storage_bucket": "travel-memories-e77db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950258299946:android:bb0069799af7ee10567f53",
+        "android_client_info": {
+          "package_name": "com.ipca.travelmemories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950258299946-s05cfdepbpvfkc838mglg0656j8rhrqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtBf2QCvnpJQjLmvs4i5Wr2-9Ox8ZG0vI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950258299946-s05cfdepbpvfkc838mglg0656j8rhrqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

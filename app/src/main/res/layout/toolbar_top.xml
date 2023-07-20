@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#00FFFFFF"
+    app:layout_collapseMode="pin"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:subtitleTextColor="#1C0404"
+    app:titleTextColor="@color/button_border">
+
+    <TextView
+        android:id="@+id/textView_toolbarTop_titlePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/satisfy"
+        android:includeFontPadding="false"
+        android:paddingTop="5dp"
+        android:shadowColor="@color/button_border"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:text="Travel Memories"
+        android:textColor="@color/button_border"
+        android:textSize="26sp" />
+</androidx.appcompat.widget.Toolbar>

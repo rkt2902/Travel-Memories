@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.diary_day_detail.DiaryDayDetailFragment">
+
+    <TextView
+        android:id="@+id/textView_diaryDayDetail_titlePage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/satisfy"
+        android:text="Dia"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_diaryDayDetail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:text="Título"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_diaryDayDetail_titlePage" />
+
+    <EditText
+        android:id="@+id/editText_diaryDayDetail_body"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="34dp"
+        android:autoText="false"
+        android:background="@drawable/border_style"
+        android:elegantTextHeight="false"
+        android:ems="16"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:text="O que fizeste hoje?"
+        android:gravity="start|top"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_diaryDayDetail_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_diaryDayDetail_title" />
+
+    <TextView
+        android:id="@+id/textView_diaryDayDetail_date"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="48dp"
+        android:text="Data do dia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_diaryDayDetail_body" />
+
+
+    <Button
+        android:id="@+id/button_diaryDayDetail_date"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/button_background"
+        android:clickable="true"
+        android:foregroundTint="#001B1B1B"
+        android:gravity="left"
+        android:letterSpacing="0"
+        android:lineSpacingExtra="0dp"
+        android:scrollbarSize="0dp"
+        android:textSize="1dp"
+        app:icon="@drawable/ic_baseline_calendar_month_24"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_diaryDayDetail_remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/button_border"
+        app:strokeWidth="2dp" />
+
+
+    <Button
+        android:id="@+id/button_diaryDayDetail_update"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/button_background"
+        android:foregroundTint="#1B1B1B"
+
+        app:icon="@drawable/ic_baseline_edit_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_diaryDayDetail_date"
+        app:strokeColor="@color/button_border"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/button_diaryDayDetail_remove"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/alert"
+        android:foregroundTint="#1B1B1B"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/button_border"
+        app:strokeWidth="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
